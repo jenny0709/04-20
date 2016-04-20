@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	div{
+		width: 450px;
+		height: 450px;
+		margin: 10px auto;
+		color: #fff;
+	}
+	/*模糊效果*/
+	.box1{
+		-webkit-filter:blur(10px);
+	}
+	.box1 img,.box2 img{
+		width: 450px;
+	}
+	.box1:hover{
+		transition:-webkit-filter 0.5s;  
+		/*时间延迟*/
+		-webkit-filter:blur(0px);
+	}
+	/*灰度效果*/
+	.box2{
+		-webkit-filter:grayscale(1);
+	}
+	.box2:hover{
+		transition:-webkit-filter 1s;
+		-webkit-filter:grayscale(0);
+	}
+	/*渐变效果*/
+	.box3{
+		background-color: red;
+		border-radius: 50%;
+	}
+	.box3 div{
+		border-radius: 50%;
+	}
+	.inner1{
+		width: 400px;
+		height: 400px;
+		background-color: orange;
+	}
+	</style>
+</head>
+<body>
+	<div class="box1"><img src="1.jpg" alt=""></div>
+	<div class="box2"><img src="2.jpg" alt=""></div>
+	<div class="box3">
+		<div class="inner1">
+			
+		</div>
+		<div class="inner2">
+			
+		</div>
+		<div class="inner3">
+			
+		</div>
+		<div class="inner4">
+			
+		</div>
+		<div class="inner5">
+			
+		</div>
+		<div class="inner6">
+			
+		</div>
+	</div>
+	<div class="box4">004</div>
+	<div class="box5">005</div>
+	<div class="box6">006</div>
+	<div class="box7">007</div>
+	<div class="box8">008</div>
+	<div class="box9">009</div>
+	<div class="box10">010</div>
+</body>
+</html>
