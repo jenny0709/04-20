@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>进度条</title>
+	<script src="mjquery.js"></script>
+	<style>
+	.out{
+		width: 815px;
+		height: 20px;
+		margin-left: 10px;
+		border-radius:4px;
+		background-color: #F0F0F0;
+		box-shadow:  -1px 2px 0px #E4E4E4 inset;
+		overflow: hidden;
+	}
+	.box{
+		width: 366px;
+		height: 20px;
+		border-radius: 4px 0 0 4px;
+		background:repeating-linear-gradient(45deg,#347AB6,#347AB6 13px,#508CC0 13px,#508CC0 28px);
+	}
+	</style>
+	<script>
+	$(function(){
+		var box=$(".box");
+		box.css({width:"0"});
+		box.animate({width:"815"},6000,function(){
+			box.css({width:"0"});
+		});
+	})
+	</script>
+</head>
+<body>
+	<div class="out">
+		<div class="box"></div>
+	</div>
+</body>
+</html>
