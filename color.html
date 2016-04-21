@@ -32,45 +32,39 @@
 	}
 	/*渐变效果*/
 	.box3{
-		background-color: red;
-		border-radius: 50%;
-	}
-	.box3 div{
-		border-radius: 50%;
-	}
-	.inner1{
-		width: 400px;
-		height: 400px;
-		background-color: orange;
+		background: linear-gradient(red,orange,yellow,green,blue,indigo,violet);;
 	}
 	.box4{
-		background:repeating-linear-gradient(45deg,#347AB6,#347AB6 27px,#508CC0 42px,#508CC0 43px);
+		background:repeating-linear-gradient(to right,orange,yellow,green,blue,indigo,violet);
+	}
+	.box5{
+		background:repeating-linear-gradient(to left,orange,yellow,green,blue,indigo,violet);
+	}
+	.box6{
+		background:repeating-linear-gradient(to right bottom,yellow,green);
+	}
+	.box7{
+		background:repeating-linear-gradient(to bottom,#c6ff00,#538300);
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c6ff00', endColorstr='#538300',GradientType='1');
+	}
+	.box8{
+		background:radial-gradient(red,orange,yellow,green,blue,indigo,violet);
+	}
+	.box9{
+		background:radial-gradient(green 40%,yellow 60%);
+	}
+	.box10{
+		background: repeating-radial-gradient(red,yellow 10%,green 15%);
+	}
+	.box11{
+		background: repeating-radial-gradient(yellow,yellow 10%,green 10%,green 15%);
 	}
 	</style>
 </head>
 <body>
 	<div class="box1"><img src="1.jpg" alt=""></div>
 	<div class="box2"><img src="2.jpg" alt=""></div>
-	<div class="box3">
-		<div class="inner1">
-			
-		</div>
-		<div class="inner2">
-			
-		</div>
-		<div class="inner3">
-			
-		</div>
-		<div class="inner4">
-			
-		</div>
-		<div class="inner5">
-			
-		</div>
-		<div class="inner6">
-			
-		</div>
-	</div>
+	<div class="box3"></div>
 	<div class="box4">004</div>
 	<div class="box5">005</div>
 	<div class="box6">006</div>
@@ -78,5 +72,6 @@
 	<div class="box8">008</div>
 	<div class="box9">009</div>
 	<div class="box10">010</div>
+	<div class="box11">011</div>
 </body>
 </html>
